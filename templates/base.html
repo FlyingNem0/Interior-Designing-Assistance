@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block 'title' %} Interior Design Home{% endblock  %}</title>
     <link rel="stylesheet" href="{% static "styles.css" %}">
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{% static 'custom-styles.css' %}">
 </head>
 <body>
@@ -28,7 +28,7 @@
                 <li>
                     <a href="#">Product Recommendations</a>
                     <ul class="dropdown">
-                        <li><a href="#">Local Recommendations</a></li>
+                        <li><a href={% url "online_recommendation" %}>Local Recommendations</a></li>
                         <li><a href="#">Online Recommendations</a></li>
                     </ul>
                 </li>
